@@ -1,0 +1,320 @@
+{
+  "title": "Hichem Jouaber — Documentary Introduction",
+  "base_dir": "../..",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration": 119.0,
+    "crossfade_sec": 0.6,
+    "show_progress_bar": true
+  },
+  "audio": {
+    "voice": "ar-SA-HamedNeural",
+    "rate": "+18%",
+    "pitch": "-2Hz",
+    "sample_rate": 44100
+  },
+  "paths": {
+    "audio_dir": "assets/audio",
+    "preview_dir": "assets/previews",
+    "master_wav_name": "master_audio.wav",
+    "master_mp3_name": "master_audio_corrected.mp3",
+    "output_mp4": "hichem_jouaber_intro_video.mp4"
+  },
+  "fonts": {
+    "ar_bold": "C:/Windows/Fonts/calibrib.ttf",
+    "ar_reg": "C:/Windows/Fonts/calibri.ttf",
+    "fr_bold": "C:/Windows/Fonts/arialbd.ttf",
+    "fr_reg": "C:/Windows/Fonts/arial.ttf",
+    "fr_ital": "C:/Windows/Fonts/ariali.ttf"
+  },
+  "colors": {
+    "navy": [10, 22, 42, 255],
+    "card_bg": [12, 24, 46, 208],
+    "gold": [212, 175, 55, 255],
+    "gold_soft": [212, 175, 55, 130],
+    "cream": [248, 246, 240, 255],
+    "silver": [185, 200, 220, 255],
+    "teal": [38, 132, 148, 255],
+    "muted": [148, 163, 184, 255]
+  },
+  "assets": {
+    "backgrounds": {
+      "bg1": {"path": "assets/scene1_bg.jpg", "brightness": 0.56, "saturation": 0.88},
+      "bg2": {"path": "assets/scene2_enpc.jpg", "brightness": 0.54, "saturation": 0.86},
+      "bg3a": {"path": "assets/scene3_boardroom.jpg", "brightness": 0.50, "saturation": 0.84},
+      "bg3b": {"path": "assets/scene3_map_hubs.jpg", "brightness": 0.52, "saturation": 0.85},
+      "bg4": {"path": "assets/scene4_book_pages.jpg", "brightness": 0.50, "saturation": 0.85}
+    },
+    "sprites": {
+      "portrait_suit": {
+        "path": "assets/ilboursa_img.jpg",
+        "crop": [888, 360, 1102, 572],
+        "size": [520, 520],
+        "sharpness": 1.3,
+        "contrast": 1.06,
+        "radius": 28
+      },
+      "book_front": {
+        "path": "assets/ilboursa_img.jpg",
+        "crop": [710, 0, 1280, 732],
+        "size": [460, 590],
+        "radius": 22
+      },
+      "book_front_small": {
+        "path": "assets/ilboursa_img.jpg",
+        "crop": [710, 0, 1280, 732],
+        "size": [400, 515],
+        "radius": 20
+      },
+      "book_back": {
+        "path": "assets/ilboursa_img.jpg",
+        "crop": [0, 0, 530, 732],
+        "size": [430, 590],
+        "radius": 22
+      },
+      "portrait_bluebirds": {
+        "path": "assets/hichem_portrait_bluebirds.jpg",
+        "size": [420, 540],
+        "radius": 24
+      }
+    }
+  },
+  "audio_cues": [
+    {
+      "id": "scene1",
+      "start": 1.0,
+      "subtitle": "من الكفاءات التونسية التي صنعت مسارًا مهنيًا دوليًا متميزًا، يبرز اسم المهندس هشام جوابر، ابن جهة قابس، الذي جمع بين التكوين الهندسي الرفيع والخبرة الاستراتيجية في كبرى المؤسسات الدولية.",
+      "parts": [
+        {
+          "name": "p1",
+          "text": "مِنَ الكَفَاءَاتِ التُّونُسِيَّةِ الَّتِي صَنَعَتْ مَسَارًا مِهْنِيًّا دَوْلِيًّا مُتَمَيِّزًا، يَبْرُزُ اسْمُ المُهَنْدِسِ هِشَام جْوَابِر، ابْنِ جِهَةِ",
+          "threshold": 200,
+          "pad_before": 1000,
+          "pad_after": 1200
+        },
+        {
+          "name": "p_g",
+          "text": "Gabesse,",
+          "voice": "fr-FR-HenriNeural",
+          "rate": "+6%",
+          "pitch": "-4Hz",
+          "af": "volume=1.75,equalizer=f=160:width_type=q:w=1:g=3.0",
+          "threshold": 300,
+          "pad_before": 800,
+          "pad_after": 1200,
+          "pause_before": 0.07,
+          "pause_after": 0.16
+        },
+        {
+          "name": "p2",
+          "text": "الَّذِي جَمَعَ بَيْنَ التَّكْوِينِ الهَنْدَسِيِّ الرَّفِيعِ، وَالخِبْرَةِ الاسْتِرَاتِيجِيَّةِ فِي كُبْرَى المُؤَسَّسَاتِ الدَّوْلِيَّة.",
+          "threshold": 200,
+          "pad_before": 1500,
+          "pad_after": 2000
+        }
+      ]
+    },
+    {
+      "id": "scene2",
+      "start": 16.0,
+      "tts_text": "تَخَرَّجَ المُهَنْدِسُ هِشَام جْوَابِر مِنَ المَدْرَسَةِ الوَطَنِيَّةِ العُلْيَا لِلْجُسُورِ وَالطُّرُقِ بِفَرَنْسَا، إِحْدَى أَعْرَقِ المُؤَسَّسَاتِ الهَنْدَسِيَّةِ فِي أُورُوبَّا، لِيَنْطَلِقَ فِي مَسِيرَةٍ مِهْنِيَّةٍ تَمْتَدُّ لِأَكْثَرَ مِنْ ثَلَاثِينَ عَامًا، كَرَّسَ خِلَالَهَا خِبْرَتَهُ لِمَجَالَاتِ الاسْتِشَارَاتِ الاسْتِرَاتِيجِيَّةِ، وَالتَّحَوُّلِ المُؤَسَّسِيِّ، وَإِعَادَةِ الهَيْكَلَة.",
+      "subtitle": "تخرّج المهندس هشام جوابر من المدرسة الوطنية العليا للجسور والطرق بفرنسا، إحدى أعرق المؤسسات الهندسية في أوروبا، لينطلق في مسيرة مهنية تمتد لأكثر من ثلاثين عامًا، كرّس خلالها خبرته لمجالات الاستشارات الاستراتيجية، والتحوّل المؤسسي، وإعادة الهيكلة."
+    },
+    {
+      "id": "scene3a",
+      "start": 35.2,
+      "tts_text": "خِلَالَ مَسِيرَتِهِ، تَوَلَّى مَسْؤُولِيَّاتٍ قِيَادِيَّةً ضِمْنَ مَجْمُوعَاتٍ دَوْلِيَّةٍ كُبْرَى، وَسَاهَمَ فِي قِيَادَةِ وَمُوَاكَبَةِ بَرَامِجَ لِلْإِصْلَاحِ وَالتَّحَوُّلِ الاقْتِصَادِيِّ وَالمُؤَسَّسِيِّ خَارِجَ حُدُودِ الوَطَن.",
+      "subtitle": "خلال مسيرته، تولّى مسؤوليات قيادية ضمن مجموعات دولية كبرى، وساهم في قيادة ومواكبة برامج للإصلاح والتحوّل الاقتصادي والمؤسسي خارج حدود الوطن."
+    },
+    {
+      "id": "scene3b",
+      "start": 47.0,
+      "tts_text": "وَقَدِ امْتَدَّتْ تَجَارِبُهُ المِهْنِيَّةُ إِلَى عَدَدٍ مِنَ المَحَطَّاتِ الدَّوْلِيَّةِ البَارِزَةِ، مِنْ بَيْنِهَا المَمْلَكَةُ المُتَّحِدَةُ، وَبُولَنْدَا، وَسِنْغَافُورَة، حَيْثُ رَاكَمَ خِبْرَةً مُتَنَوِّعَةً فِي فَهْمِ التَّحَدِّيَاتِ الاقْتِصَادِيَّةِ، وَإِدَارَةِ التَّحَوُّلَاتِ، وَتَحْوِيلِ الرُّؤَى الاسْتِرَاتِيجِيَّةِ إِلَى بَرَامِجِ عَمَلٍ قَابِلَةٍ لِلتَّنْفِيذ.",
+      "subtitle": "وقد امتدت تجاربه المهنية إلى عدد من المحطات الدولية البارزة، من بينها المملكة المتحدة، وبولندا، وسنغافورة، حيث راكم خبرة متنوعة في فهم التحديات الاقتصادية، وإدارة التحوّلات، وتحويل الرؤى الاستراتيجية إلى برامج عمل قابلة للتنفيذ."
+    },
+    {
+      "id": "scene4a",
+      "start": 65.5,
+      "tts_text": "وَمِنْ حَصِيلَةِ هَذِهِ التَّجْرِبَةِ الدَّوْلِيَّةِ، يَأْتِي مُؤَلَّفُهُ «المِيثَاق – 108 رَافِعَةً لِإِقْلَاعِ تُونُس»، لِيَطْرَحَ رُؤْيَةً عَمَلِيَّةً لِمُسْتَقْبَلِ البِلَادِ، تَتَجَاوَزُ تَشْخِيصَ الصُّعُوبَاتِ إِلَى اقْتِرَاحِ حُلُولٍ وَآلِيَّاتِ تَنْفِيذٍ وَاضِحَة.",
+      "subtitle": "ومن حصيلة هذه التجربة الدولية، يأتي مؤلّفه «الميثاق – 108 رافعة لإقلاع تونس»، ليطرح رؤية عملية لمستقبل البلاد، تتجاوز تشخيص الصعوبات إلى اقتراح حلول وآليات تنفيذ واضحة."
+    },
+    {
+      "id": "scene4b",
+      "start": 80.5,
+      "tts_text": "يَتَضَمَّنُ الكِتَابُ 108 رَافِعَةً لِلْإِصْلَاحِ وَالتَّطْوِيرِ، مُوَزَّعَةً عَلَى مَشَارِيعَ وَمُبَادَرَاتٍ، مَعَ تَحْدِيدِ التَّكَالِيفِ وَالآجَالِ وَالمَسْؤُولِيَّاتِ، فِي مُحَاوَلَةٍ جَادَّةٍ لِلْإِجَابَةِ عَنْ سُؤَالٍ جَوْهَرِيٍّ: كَيْفَ نَنْتَقِلُ مِنَ الاسْتِرَاتِيجِيَّةِ إِلَى الإِنْجَاز؟",
+      "subtitle": "يتضمّن الكتاب 108 رافعة للإصلاح والتطوير، موزّعة على مشاريع ومبادرات، مع تحديد التكاليف والآجال والمسؤوليات، في محاولة جادة للإجابة عن سؤال جوهري: كيف ننتقل من الاستراتيجية إلى الإنجاز؟"
+    },
+    {
+      "id": "scene4c",
+      "start": 96.1,
+      "tts_text": "وَقَدْ قَدَّمَ لِهَذَا العَمَلِ الاقْتِصَادِيُّ وَوَزِيرُ المَالِيَّةِ الأَسْبَقُ الأُسْتَاذ حَكِيم بِنْ حَمُّودَةَ.",
+      "subtitle": "وقد قدّم لهذا العمل الاقتصادي ووزير المالية الأسبق الأستاذ حكيم بن حمودة."
+    },
+    {
+      "id": "scene5a",
+      "start": 102.0,
+      "tts_text": "إِنَّهَا تَجْرِبَةٌ مِهْنِيَّةٌ دَوْلِيَّةٌ تَلْتَقِي مَعَ طُمُوحٍ وَطَنِيٍّ، وَرِسَالَةٌ تُؤَكِّدُ أَنَّ بِنَاءَ المُسْتَقْبَلِ لَا يَتَحَقَّقُ بِالأَفْكَارِ وَحْدَهَا، بَلْ بِالإِرَادَةِ وَالتَّخْطِيطِ وَالعَمَل.",
+      "subtitle": "إنها تجربة مهنية دولية تلتقي مع طموح وطني، ورسالة تؤكد أن بناء المستقبل لا يتحقق بالأفكار وحدها، بل بالإرادة والتخطيط والعمل."
+    },
+    {
+      "id": "scene5b",
+      "start": 112.3,
+      "tts_text": "المُهَنْدِسُ هِشَام جْوَابِر... خِبْرَةٌ دَوْلِيَّةٌ، وَرُؤْيَةٌ مِنْ أَجْلِ تُونُس.",
+      "subtitle": "المهندس هشام جوابر... خبرة دولية، ورؤية من أجل تونس."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene1",
+      "start": 0.0,
+      "end": 15.5,
+      "background": "bg1",
+      "label_ar": "افتتاحية",
+      "label_fr": "PORTRAIT D'EXCELLENCE",
+      "ken_burns": {"z0": 1.00, "z1": 1.12, "px0": 0.50, "py0": 0.50, "px1": 0.52, "py1": 0.45},
+      "elements": [
+        {"type": "sprite", "sprite": "portrait_suit", "center": [455, 505]},
+        {"type": "rect", "rect": [790, 225, 1835, 785], "radius": 26, "fill": "card_bg", "outline": "gold_soft", "width": 2},
+        {"type": "rect", "rect": [820, 260, 828, 750], "radius": 4, "fill": "gold"},
+        {"type": "text_ar", "xy": [1325, 315], "text": "المهندس هشام جوابر", "size": 64, "color": "gold"},
+        {"type": "line", "points": [960, 385, 1690, 385], "color": "gold_soft", "width": 2},
+        {"type": "text_ar", "xy": [1325, 455], "text": "كفاءة تونسية ومسار مهني دولي متميز", "size": 38, "color": "cream"},
+        {"type": "text_ar", "xy": [1325, 545], "text": "ابن جهة قابس — تكوين هندسي رفيع وخبرة استراتيجية", "size": 30, "color": "silver", "font_role": "ar_reg", "max_w": 880},
+        {"type": "text_ltr", "xy": [1325, 680], "text": "HICHEM JOUABER  •  STRATÉGIE & TRANSFORMATION", "size": 24, "color": "gold", "font_role": "fr_bold"}
+      ]
+    },
+    {
+      "id": "scene2",
+      "start": 15.5,
+      "end": 34.7,
+      "background": "bg2",
+      "label_ar": "التكوين الأكاديمي",
+      "label_fr": "FORMATION D'INGÉNIEUR",
+      "ken_burns": {"z0": 1.02, "z1": 1.14, "px0": 0.45, "py0": 0.55, "px1": 0.55, "py1": 0.45},
+      "elements": [
+        {"type": "rect", "rect": [90, 215, 1080, 795], "radius": 24, "fill": "card_bg", "outline": "gold_soft", "width": 2},
+        {"type": "text_ar", "xy": [585, 290], "text": "التكوين الهندسي الرفيع", "size": 32, "color": "gold"},
+        {"type": "text_ar", "xy": [585, 385], "text": "المدرسة الوطنية العليا للجسور والطرق بفرنسا", "size": 40, "color": "cream", "max_w": 880},
+        {"type": "text_ltr", "xy": [585, 490], "text": "École nationale des ponts et chaussées", "size": 28, "color": "silver", "font_role": "fr_ital"},
+        {"type": "line", "points": [240, 550, 930, 550], "color": "gold_soft", "width": 2},
+        {"type": "text_ar", "xy": [585, 640], "text": "الاستشارات الاستراتيجية  •  التحوّل المؤسسي  •  إعادة الهيكلة", "size": 29, "color": "cream", "max_w": 880},
+        {"type": "rect", "rect": [1135, 285, 1830, 725], "radius": 24, "fill": "card_bg", "outline": "gold", "width": 2},
+        {"type": "text_ltr", "xy": [1482, 420], "text": "30+", "size": 128, "color": "gold", "font_role": "fr_bold"},
+        {"type": "text_ar", "xy": [1482, 555], "text": "سنة من الخبرة المهنية", "size": 40, "color": "cream"},
+        {"type": "text_ltr", "xy": [1482, 630], "text": "ANS D'EXPÉRIENCE INTERNATIONALE", "size": 20, "color": "silver", "font_role": "fr_bold"}
+      ]
+    },
+    {
+      "id": "scene3a",
+      "start": 34.7,
+      "end": 46.5,
+      "background": "bg3a",
+      "label_ar": "المسار القيادي",
+      "label_fr": "LEADERSHIP INTERNATIONAL",
+      "ken_burns": {"z0": 1.00, "z1": 1.12, "px0": 0.50, "py0": 0.52, "px1": 0.46, "py1": 0.44},
+      "elements": [
+        {"type": "rect", "rect": [250, 245, 1670, 765], "radius": 26, "fill": "card_bg", "outline": "gold_soft", "width": 2},
+        {"type": "text_ar", "xy": [960, 340], "text": "مسؤوليات قيادية في مجموعات دولية كبرى", "size": 46, "color": "gold"},
+        {"type": "line", "points": [480, 410, 1440, 410], "color": "gold_soft", "width": 2},
+        {"type": "text_ar", "xy": [960, 505], "text": "قيادة ومواكبة برامج الإصلاح والتحوّل الاقتصادي والمؤسسي", "size": 36, "color": "cream", "max_w": 1240},
+        {"type": "text_ar", "xy": [960, 595], "text": "تحويل الرؤى الاستراتيجية إلى برامج عمل قابلة للتنفيذ", "size": 30, "color": "silver", "font_role": "ar_reg", "max_w": 1200},
+        {"type": "text_ltr", "xy": [960, 690], "text": "GOUVERNANCE  •  RÉFORME ÉCONOMIQUE  •  TRANSFORMATION", "size": 22, "color": "gold", "font_role": "fr_bold"}
+      ]
+    },
+    {
+      "id": "scene3b",
+      "start": 46.5,
+      "end": 65.0,
+      "background": "bg3b",
+      "label_ar": "المحطات الدولية",
+      "label_fr": "EXPÉRIENCE MONDIALE",
+      "ken_burns": {"z0": 1.04, "z1": 1.14, "px0": 0.48, "py0": 0.52, "px1": 0.54, "py1": 0.46},
+      "elements": [
+        {"type": "rect", "rect": [220, 165, 1700, 325], "radius": 20, "fill": "card_bg", "outline": "gold_soft", "width": 2},
+        {"type": "text_ar", "xy": [960, 215], "text": "المحطات الدولية البارزة", "size": 38, "color": "gold"},
+        {"type": "text_ar", "xy": [960, 275], "text": "المملكة المتحدة   |   بولندا   |   سنغافورة", "size": 34, "color": "cream"},
+
+        {"type": "rect", "rect": [140, 375, 650, 775], "radius": 22, "fill": "card_bg", "outline": "gold", "width": 2, "start_offset": 0.6},
+        {"type": "text_ltr", "xy": [395, 445], "text": "ROYAUME-UNI", "size": 24, "color": "gold", "font_role": "fr_bold", "start_offset": 0.6},
+        {"type": "text_ar", "xy": [395, 520], "text": "المملكة المتحدة", "size": 40, "color": "cream", "start_offset": 0.6},
+        {"type": "line", "points": [220, 575, 570, 575], "color": "gold_soft", "width": 2, "start_offset": 0.6},
+        {"type": "text_ar", "xy": [395, 655], "text": "فهم التحديات الاقتصادية وإدارة النظم المعقدة", "size": 26, "color": "silver", "font_role": "ar_reg", "max_w": 430, "start_offset": 0.6},
+
+        {"type": "rect", "rect": [705, 375, 1215, 775], "radius": 22, "fill": "card_bg", "outline": "gold", "width": 2, "start_offset": 3.0},
+        {"type": "text_ltr", "xy": [960, 445], "text": "POLOGNE", "size": 24, "color": "gold", "font_role": "fr_bold", "start_offset": 3.0},
+        {"type": "text_ar", "xy": [960, 520], "text": "بولندا", "size": 40, "color": "cream", "start_offset": 3.0},
+        {"type": "line", "points": [785, 575, 1135, 575], "color": "gold_soft", "width": 2, "start_offset": 3.0},
+        {"type": "text_ar", "xy": [960, 655], "text": "إدارة التحوّلات الهيكلية وبرامج الإصلاح", "size": 26, "color": "silver", "font_role": "ar_reg", "max_w": 430, "start_offset": 3.0},
+
+        {"type": "rect", "rect": [1270, 375, 1780, 775], "radius": 22, "fill": "card_bg", "outline": "gold", "width": 2, "start_offset": 5.4},
+        {"type": "text_ltr", "xy": [1525, 445], "text": "SINGAPOUR", "size": 24, "color": "gold", "font_role": "fr_bold", "start_offset": 5.4},
+        {"type": "text_ar", "xy": [1525, 520], "text": "سنغافورة", "size": 40, "color": "cream", "start_offset": 5.4},
+        {"type": "line", "points": [1350, 575, 1700, 575], "color": "gold_soft", "width": 2, "start_offset": 5.4},
+        {"type": "text_ar", "xy": [1525, 655], "text": "تحويل الرؤى الاستراتيجية إلى برامج عمل فعّالة", "size": 26, "color": "silver", "font_role": "ar_reg", "max_w": 430, "start_offset": 5.4}
+      ]
+    },
+    {
+      "id": "scene4a",
+      "start": 65.0,
+      "end": 80.0,
+      "background": "bg4",
+      "label_ar": "كتاب «الميثاق»",
+      "label_fr": "L'OUVRAGE",
+      "ken_burns": {"z0": 1.00, "z1": 1.11, "px0": 0.45, "py0": 0.50, "px1": 0.55, "py1": 0.50},
+      "elements": [
+        {"type": "sprite", "sprite": "book_front", "center": [425, 515]},
+        {"type": "rect", "rect": [755, 220, 1835, 795], "radius": 26, "fill": "card_bg", "outline": "gold_soft", "width": 2},
+        {"type": "text_ar", "xy": [1295, 295], "text": "المؤلَّف المرجعي", "size": 30, "color": "gold"},
+        {"type": "text_ar", "xy": [1295, 390], "text": "الميثاق – 108 رافعة لإقلاع تونس", "size": 48, "color": "cream", "max_w": 960},
+        {"type": "text_ltr", "xy": [1295, 480], "text": "LE PACTE – 108 LEVIERS POUR FAIRE DÉCOLLER LA TUNISIE", "size": 21, "color": "gold", "font_role": "fr_bold"},
+        {"type": "line", "points": [910, 530, 1680, 530], "color": "gold_soft", "width": 2},
+        {"type": "text_ar", "xy": [1295, 635], "text": "رؤية عملية لمستقبل البلاد تتجاوز التشخيص إلى اقتراح حلول وآليات تنفيذ واضحة", "size": 32, "color": "silver", "font_role": "ar_reg", "max_w": 920}
+      ]
+    },
+    {
+      "id": "scene4b",
+      "start": 80.0,
+      "end": 101.5,
+      "background": "bg4",
+      "label_ar": "مضمون الكتاب والتقديم",
+      "label_fr": "108 LEVIERS D'ACTION",
+      "ken_burns": {"z0": 1.03, "z1": 1.13, "px0": 0.55, "py0": 0.48, "px1": 0.45, "py1": 0.54},
+      "elements": [
+        {"type": "sprite", "sprite": "book_back", "center": [405, 515]},
+        {"type": "rect", "rect": [715, 195, 1835, 555], "radius": 24, "fill": "card_bg", "outline": "gold_soft", "width": 2},
+        {"type": "text_ar", "xy": [1275, 270], "text": "108 رافعة للإصلاح والتطوير", "size": 46, "color": "gold"},
+        {"type": "text_ar", "xy": [1275, 355], "text": "موزّعة على مشاريع ومبادرات مع تحديد التكاليف والآجال والمسؤوليات", "size": 30, "color": "cream", "font_role": "ar_reg", "max_w": 980},
+        {"type": "line", "points": [890, 415, 1660, 415], "color": "gold_soft", "width": 2},
+        {"type": "text_ar", "xy": [1275, 485], "text": "كيف ننتقل من الاستراتيجية إلى الإنجاز؟", "size": 38, "color": "gold"},
+
+        {"type": "rect", "rect": [715, 590, 1835, 830], "radius": 24, "fill": "card_bg", "outline": "gold", "width": 2, "start_offset": 15.2},
+        {"type": "text_ar", "xy": [1275, 645], "text": "تقديم الكتاب", "size": 28, "color": "silver", "start_offset": 15.2},
+        {"type": "text_ar", "xy": [1275, 710], "text": "الأستاذ حكيم بن حمودة", "size": 42, "color": "cream", "start_offset": 15.2},
+        {"type": "text_ar", "xy": [1275, 775], "text": "الاقتصادي ووزير المالية الأسبق", "size": 28, "color": "gold", "start_offset": 15.2}
+      ]
+    },
+    {
+      "id": "scene5",
+      "start": 101.5,
+      "end": 119.0,
+      "background": "bg1",
+      "label_ar": "خاتمة",
+      "label_fr": "VISION POUR LA TUNISIE",
+      "ken_burns": {"z0": 1.02, "z1": 1.10, "px0": 0.48, "py0": 0.48, "px1": 0.52, "py1": 0.52},
+      "elements": [
+        {"type": "sprite", "sprite": "portrait_bluebirds", "center": [350, 515]},
+        {"type": "sprite", "sprite": "book_front_small", "center": [1570, 515]},
+        {"type": "rect", "rect": [615, 220, 1305, 810], "radius": 26, "fill": "card_bg", "outline": "gold", "width": 2},
+        {"type": "text_ar", "xy": [960, 315], "text": "تجربة مهنية دولية تلتقي مع طموح وطني", "size": 36, "color": "gold", "max_w": 620},
+        {"type": "line", "points": [715, 390, 1205, 390], "color": "gold_soft", "width": 2},
+        {"type": "text_ar", "xy": [960, 470], "text": "بناء المستقبل بالإرادة والتخطيط والعمل", "size": 32, "color": "cream", "max_w": 600},
+        {"type": "text_ar", "xy": [960, 595], "text": "المهندس هشام جوابر", "size": 44, "color": "gold", "start_offset": 9.8},
+        {"type": "text_ar", "xy": [960, 670], "text": "خبرة دولية... ورؤية من أجل تونس", "size": 32, "color": "cream", "max_w": 600, "start_offset": 9.8},
+        {"type": "text_ltr", "xy": [960, 750], "text": "HICHEM JOUABER  •  LE PACTE", "size": 20, "color": "silver", "font_role": "fr_bold", "start_offset": 9.8}
+      ]
+    }
+  ]
+}
+
