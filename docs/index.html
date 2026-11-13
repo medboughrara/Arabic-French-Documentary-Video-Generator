@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arabic-French Documentary Video Generator — Sample Showcase</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0a162a;
+      color: #f8f6f0;
+      margin: 0;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    h1 { color: #d4af37; margin-bottom: 0.25rem; }
+    .subtitle { color: #b9c8dc; margin-top: 0; margin-bottom: 2rem; }
+    .card {
+      background: #10203a;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    h2 { color: #d4af37; font-size: 1.1rem; margin-top: 0; }
+    video, audio { width: 100%; margin-top: 0.5rem; border-radius: 8px; }
+    a { color: #d4af37; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Arabic / French Documentary Video Generator</h1>
+    <p class="subtitle">Sample rendered outputs from <code>examples/hichem_jouaber/project.json</code></p>
+
+    <div class="card">
+      <h2>Full 1080p Documentary Video (1:59)</h2>
+      <video controls preload="metadata" poster="https://raw.githubusercontent.com/medboughrara/Arabic-French-Documentary-Video-Generator/main/examples/hichem_jouaber/sample/previews/preview_01_t008s.png">
+        <source src="https://raw.githubusercontent.com/medboughrara/Arabic-French-Documentary-Video-Generator/main/examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="card">
+      <h2>Master Audio Track (Voiceover + Ducking Documentary Score)</h2>
+      <audio controls preload="metadata">
+        <source src="https://raw.githubusercontent.com/medboughrara/Arabic-French-Documentary-Video-Generator/main/examples/hichem_jouaber/sample/master_audio.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <div class="card">
+      <h2>Scene 1 Phonetic Splice (<code>ar-SA-HamedNeural</code> + <code>ar-EG-ShakirNeural</code> "جَابِسْ")</h2>
+      <audio controls preload="metadata">
+        <source src="https://raw.githubusercontent.com/medboughrara/Arabic-French-Documentary-Video-Generator/main/examples/hichem_jouaber/sample/scene1_voiceover.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <p><a href="https://github.com/medboughrara/Arabic-French-Documentary-Video-Generator">Back to GitHub Repository</a></p>
+  </div>
+</body>
+</html>

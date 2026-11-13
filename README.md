@@ -10,9 +10,13 @@ The included reference project ([examples/hichem_jouaber/project.json](examples/
 
 Ready-to-inspect rendered outputs are included directly in the repository:
 
-- **Full 1080p Documentary Video (1:59, 26.7 MB web-optimized H.264/AAC)**: [`examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4`](examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4)
-- **Mixed Master Soundtrack (Arabic Edge-TTS + procedural score with ducking, 2.7 MB)**: [`examples/hichem_jouaber/sample/master_audio.mp3`](examples/hichem_jouaber/sample/master_audio.mp3)
-- **Scene 1 Phonetic Splice Sample (`ar-SA-HamedNeural` + `ar-EG-ShakirNeural` `"جَابِسْ"`, 0.3 MB)**: [`examples/hichem_jouaber/sample/scene1_voiceover.mp3`](examples/hichem_jouaber/sample/scene1_voiceover.mp3)
+| Output | Direct Browser Player (`raw.githubusercontent.com`) | Repository File |
+| :--- | :--- | :--- |
+| **Full 1080p Documentary Video (1:59, 26.7 MB H.264/AAC)** | [▶ Play Video in Browser](https://raw.githubusercontent.com/medboughrara/Arabic-French-Documentary-Video-Generator/main/examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4) | [`hichem_jouaber_intro.mp4`](examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4) |
+| **Mixed Master Soundtrack (Voiceover + Ducking Score, 2.7 MB)** | [🔊 Play Audio in Browser](https://raw.githubusercontent.com/medboughrara/Arabic-French-Documentary-Video-Generator/main/examples/hichem_jouaber/sample/master_audio.mp3) | [`master_audio.mp3`](examples/hichem_jouaber/sample/master_audio.mp3) |
+| **Scene 1 Phonetic Splice (`ar-SA-HamedNeural` + `ar-EG-ShakirNeural` `"جَابِسْ"`, 0.3 MB)** | [🔊 Play Scene 1 Audio](https://raw.githubusercontent.com/medboughrara/Arabic-French-Documentary-Video-Generator/main/examples/hichem_jouaber/sample/scene1_voiceover.mp3) · [▶ Audio Card MP4](https://raw.githubusercontent.com/medboughrara/Arabic-French-Documentary-Video-Generator/main/examples/hichem_jouaber/sample/scene1_voiceover_card.mp4) | [`scene1_voiceover.mp3`](examples/hichem_jouaber/sample/scene1_voiceover.mp3) |
+
+> **Note on Playing Audio Directly Inside GitHub `README.md`**: GitHub's Markdown sanitizer strips `<audio>` and `<video>` HTML tags pointed at repo files. Use the direct `raw.githubusercontent.com` links above to stream audio/video straight in your browser tab, enable **GitHub Pages** from `/docs` ([docs/index.html](docs/index.html)) for an embedded HTML5 player, or drag-and-drop [`scene1_voiceover_card.mp4`](examples/hichem_jouaber/sample/scene1_voiceover_card.mp4) / [`hichem_jouaber_intro.mp4`](examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4) into the GitHub README/Issue editor to generate a native `github.com/user-attachments/assets/...` inline player.
 
 | Scene 1 — Intro | Scene 2 — Academic |
 | :---: | :---: |
@@ -25,6 +29,11 @@ Ready-to-inspect rendered outputs are included directly in the repository:
 | Scene 7 — Closing | |
 | :---: | :---: |
 | ![Scene 7](examples/hichem_jouaber/sample/previews/preview_07_t110s.png) | |
+
+---
+
+## Future R&D Roadmap: Native Tunisian Derja Speech & Understanding
+See [docs/TUNISIAN_DERJA_ROADMAP.md](docs/TUNISIAN_DERJA_ROADMAP.md) for the multi-phase architecture, Tunisian open-source datasets (`TunSwitch`, `TuniSpeech-21h`, `TARIC`, `linagora/Tunisian_Derja_Dataset`, `TUNIZI`, `TunArTTS`), and tooling plan to build a full Derja understanding and speaking AI model.
 
 ---
 
