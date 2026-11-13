@@ -10,9 +10,9 @@ The included reference project ([examples/hichem_jouaber/project.json](examples/
 
 Ready-to-inspect rendered outputs are included directly in the repository:
 
-- **Full 1080p Documentary Video (1:59, 15.7 MB web-optimized H.264/AAC)**: [`examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4`](examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4)
+- **Full 1080p Documentary Video (1:59, 26.7 MB web-optimized H.264/AAC)**: [`examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4`](examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4)
 - **Mixed Master Soundtrack (Arabic Edge-TTS + procedural score with ducking, 2.7 MB)**: [`examples/hichem_jouaber/sample/master_audio.mp3`](examples/hichem_jouaber/sample/master_audio.mp3)
-- **Scene 1 Phonetic Splice Sample (`ar-SA-HamedNeural` + `fr-FR-HenriNeural` `"Gabesse"`, 0.3 MB)**: [`examples/hichem_jouaber/sample/scene1_voiceover.mp3`](examples/hichem_jouaber/sample/scene1_voiceover.mp3)
+- **Scene 1 Phonetic Splice Sample (`ar-SA-HamedNeural` + `ar-EG-ShakirNeural` `"جَابِسْ"`, 0.3 MB)**: [`examples/hichem_jouaber/sample/scene1_voiceover.mp3`](examples/hichem_jouaber/sample/scene1_voiceover.mp3)
 
 | Scene 1 — Intro | Scene 2 — Academic |
 | :---: | :---: |
@@ -77,7 +77,7 @@ This tool was built and verified on the following environment:
    - Audio encoding uses `-c:a aac -strict -2 -b:a 192k` so both older and modern FFmpeg builds succeed.
    - Equalizer filter uses `width_type=q` (`equalizer=f=160:width_type=q:w=1:g=3.0`).
 3. **Arabic Font Shaping (`raqm=False`)**: Google variable fonts such as `Tajawal-Bold.ttf` may lack isolated Arabic Presentation Forms-B glyphs when rendered without HarfBuzz/raqm. Windows `calibrib.ttf` / `calibri.ttf` (paired with `arabic-reshaper` + `python-bidi`) render all connected ligatures cleanly.
-4. **Edge-TTS Cross-Lingual Phonetic Splicing**: For dialectal or foreign proper nouns where Arabic TTS mispronounces hard `/g/` or vowel endings (e.g., *Gabès / قابس* pronounced `/gaːbɪs/` rather than `/qaːbɪs/`), `audio_tts.py` supports splitting a cue into `parts`, synthesizing the tricky token with `fr-FR-HenriNeural` (`rate="+6%"`, `pitch="-4Hz"`), matching warmth/gain with FFmpeg EQ (`equalizer=f=160:width_type=q:w=1:g=3.0`, `volume=1.75`), trimming silence, and stitching cleanly back into the Arabic narration.
+4. **Edge-TTS Dialectal Hard-`/g/` Phonetic Splicing**: For Tunisian proper nouns requiring hard `/g/` in pure Arabic speech (e.g., *Gabès / قابس* pronounced `/gaːbɪs/` rather than `/qaːbɪs/`), `audio_tts.py` supports splitting a cue into `parts`, synthesizing the token with `ar-EG-ShakirNeural` (`"جَابِسْ"`, where Egyptian `ج` is hard `/g/`), normalizing volume (`volume=0.82`), trimming silence, and stitching seamlessly into the `ar-SA-HamedNeural` narration.
 
 ---
 

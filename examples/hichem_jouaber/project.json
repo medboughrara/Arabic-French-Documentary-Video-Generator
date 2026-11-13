@@ -96,16 +96,16 @@
         },
         {
           "name": "p_g",
-          "text": "Gabesse,",
-          "voice": "fr-FR-HenriNeural",
-          "rate": "+6%",
-          "pitch": "-4Hz",
-          "af": "volume=1.75,equalizer=f=160:width_type=q:w=1:g=3.0",
-          "threshold": 300,
-          "pad_before": 800,
-          "pad_after": 1200,
-          "pause_before": 0.07,
-          "pause_after": 0.16
+          "text": "جَابِسْ",
+          "voice": "ar-EG-ShakirNeural",
+          "rate": "+10%",
+          "pitch": "-2Hz",
+          "af": "volume=0.82",
+          "threshold": 120,
+          "pad_before": 1800,
+          "pad_after": 1800,
+          "pause_before": 0.10,
+          "pause_after": 0.18
         },
         {
           "name": "p2",
