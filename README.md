@@ -1,6 +1,6 @@
 # Arabic/French Documentary Video Generator (`docvideo`)
 
-A modular, config-driven Python toolkit for generating Full HD (1920×1080 @ 24 fps) bilingual (Arabic RTL + French/English LTR) documentary videos from a single JSON project specification—combining **Edge-TTS Arabic voiceover**, **cross-lingual phonetic splicing**, **procedural documentary background music with smooth ducking**, **Ken Burns motion**, **timed glassmorphic cards**, **synchronized Arabic subtitles**, and **FFmpeg pipe encoding**.
+A modular, config-driven Python toolkit for generating Full HD (1920×1080 @ 24 fps) bilingual (Arabic RTL + French/English LTR) documentary videos from a single JSON project specification—combining Edge-TTS Arabic voiceover, cross-lingual phonetic splicing, procedural documentary background music with smooth ducking, Ken Burns motion, timed glassmorphic cards, synchronized Arabic subtitles, and FFmpeg pipe encoding.
 
 The included reference project ([examples/hichem_jouaber/project.json](examples/hichem_jouaber/project.json)) reproduces the 1:59 documentary profile for **Eng. Hichem Jouaber** and his book *«الميثاق – 108 رافعة لإقلاع تونس» (LE PACTE)*.
 
@@ -110,14 +110,11 @@ Useful flags:
 
 ---
 
-## Pushing to GitHub
+## Repository
 
-This folder uses its own dedicated Git repository (`c:\Users\Lenovo\Music\video\.git`), with large generated media (`*.mp4`, `*.wav`, `*.mp3`, `assets/previews/`, `assets/audio/`) excluded by `.gitignore`:
+Remote origin is configured for [Arabic-French-Documentary-Video-Generator](https://github.com/medboughrara/Arabic-French-Documentary-Video-Generator), with large generated media (`*.mp4`, `*.wav`, `*.mp3`, `assets/previews/`, `assets/crops/`, `assets/audio/`) excluded by `.gitignore`:
 
 ```powershell
-# 1. Create an empty repository on GitHub (without README/.gitignore), then link & push:
-git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>.git
-git branch -M main
-git push -u origin main
+git clone https://github.com/medboughrara/Arabic-French-Documentary-Video-Generator.git
 ```
 
