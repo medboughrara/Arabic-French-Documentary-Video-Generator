@@ -1,8 +1,30 @@
 # Arabic/French Documentary Video Generator (`docvideo`)
 
-A modular, config-driven Python toolkit for generating Full HD (1920×1080 @ 24 fps) bilingual (Arabic RTL + French/English LTR) documentary videos from a single JSON project specification—combining Edge-TTS Arabic voiceover, cross-lingual phonetic splicing, procedural documentary background music with smooth ducking, Ken Burns motion, timed glassmorphic cards, synchronized Arabic subtitles, and FFmpeg pipe encoding.
+A modular, config-driven Python toolkit for generating Full HD (1920×1080 @ 24 fps) bilingual (Arabic RTL + French/English LTR) documentary videos from a single JSON project specification—combining **Edge-TTS Arabic voiceover**, **cross-lingual phonetic splicing**, **procedural documentary background music** with smooth ducking, **Ken Burns motion**, **timed glassmorphic cards**, **synchronized Arabic subtitles**, and **FFmpeg pipe encoding**.
 
 The included reference project ([examples/hichem_jouaber/project.json](examples/hichem_jouaber/project.json)) reproduces the 1:59 documentary profile for **Eng. Hichem Jouaber** and his book *«الميثاق – 108 رافعة لإقلاع تونس» (LE PACTE)*.
+
+---
+
+## Sample Output Gallery (`examples/hichem_jouaber/sample/`)
+
+Ready-to-inspect rendered outputs are included directly in the repository:
+
+- **Full 1080p Documentary Video (1:59, 15.7 MB web-optimized H.264/AAC)**: [`examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4`](examples/hichem_jouaber/sample/hichem_jouaber_intro.mp4)
+- **Mixed Master Soundtrack (Arabic Edge-TTS + procedural score with ducking, 2.7 MB)**: [`examples/hichem_jouaber/sample/master_audio.mp3`](examples/hichem_jouaber/sample/master_audio.mp3)
+- **Scene 1 Phonetic Splice Sample (`ar-SA-HamedNeural` + `fr-FR-HenriNeural` `"Gabesse"`, 0.3 MB)**: [`examples/hichem_jouaber/sample/scene1_voiceover.mp3`](examples/hichem_jouaber/sample/scene1_voiceover.mp3)
+
+| Scene 1 — Intro | Scene 2 — Academic |
+| :---: | :---: |
+| ![Scene 1](examples/hichem_jouaber/sample/previews/preview_01_t008s.png) | ![Scene 2](examples/hichem_jouaber/sample/previews/preview_02_t025s.png) |
+
+| Scene 4 — International Hubs | Scene 6 — Book & Preface |
+| :---: | :---: |
+| ![Scene 4](examples/hichem_jouaber/sample/previews/preview_04_t056s.png) | ![Scene 6](examples/hichem_jouaber/sample/previews/preview_06_t091s.png) |
+
+| Scene 7 — Closing | |
+| :---: | :---: |
+| ![Scene 7](examples/hichem_jouaber/sample/previews/preview_07_t110s.png) | |
 
 ---
 

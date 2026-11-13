@@ -15,6 +15,11 @@ env/
 *.mp3
 *.log
 
+# Track curated sample media inside examples/hichem_jouaber/sample/
+!examples/hichem_jouaber/sample/
+!examples/hichem_jouaber/sample/**
+!examples/hichem_jouaber/sample/previews/**
+
 # Generated inspection & intermediate folders
 assets/previews/
 assets/crops/
